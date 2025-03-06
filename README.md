@@ -33,26 +33,28 @@ cd eks
 ```
 ## Example Output
 Checking trunking status for EKS cluster: demo-cluster
-
-Instance ID           Instance Type   EnaSupport   Max ENIs   Trunking Enabled   Trunking Supported
-----------------------------------------------------------------------------------------------------
-i-03dixx03a732e2970   c6a.large      required     3          ❌ No               ❌ No
-i-05dxxx3d39fc44499   c6i.large      required     8          ✅ Yes              ✅ Yes
-i-069xxxeaf63994995   m5.large       required     4          ✅ Yes              ✅ Yes
-
-
+Instance ID	Instance Type	EnaSupport	Max ENIs	Trunking Enabled	Trunking Supported
+i-03d61603a732e2970	c6a.large	required	3	❌ No	❌ No
+i-05d86d3d39fc44499	c6i.large	required	8	✅ Yes	✅ Yes
+i-06937deaf63994995	m5.large	required	4	✅ Yes	✅ Yes
 ## 🛠️ Troubleshooting
+
 1️⃣  "No EKS cluster found"
+
 Ensure you have an active cluster by running:
 
 `aws eks list-clusters`
+
 If no clusters appear, that explains it.
+
 2️⃣  "No worker nodes found"
+
 Ensure nodes exist:
 
 `kubectl get nodes`
 
 3️⃣  "Permission denied" when running the script
+
 Fix by granting execution permission:
 
 chmod +x eks-trunking-check.sh 
