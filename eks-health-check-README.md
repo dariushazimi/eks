@@ -22,14 +22,11 @@ sudo apt install awscli jq -y  # For Ubuntu/Debian
 brew install awscli jq          # For macOS
 
 
-```
-
-```
 ./eks_health_check.sh <eks-cluster-name>
 ```
 
 ========================================
-🔍 **EKS Cluster Health Check**
+## 🔍 EKS Cluster Health Check
 ========================================
 ✅ AWS Account ID   : 7000000000
 🔍 Checking EKS Cluster Details...
@@ -39,21 +36,22 @@ brew install awscli jq          # For macOS
 ✅ Public Access     : ⚠️ Enabled (Security Risk)
 🔍 Checking IAM Role Permissions...
 ✅ EKS IAM Role: arn:aws:iam::3333333330:role/DemoClusterRole
-🔍 Checking AWS Security Groups...
+
+## 🔍 Checking AWS Security Groups...
 ---------------------------------------------------------------------------------
 Security Group Name                                      Group ID                
 ---------------------------------------------------------------------------------
 eks-cluster-sg-demo-cluster-2096                   sg-0dff6748462ca     
 eksctl-demo-cluster-cluster-ClusterSharedNodeSecurity..  sg-04f0a6c49b0     
 ---------------------------------------------------------------------------------
-🔍 Checking DaemonSets & StatefulSets...
+## 🔍 Checking DaemonSets & StatefulSets...
 ---------------------------------------------------------------------------------
 NAMESPACE       NAME                                     READY    AGE       
 ---------------------------------------------------------------------------------
 default         retail-store-app-catalog-mysql           1/1      2d2h                
 default         retail-store-app-orders-postgresql       1/1      2d2h                
 ---------------------------------------------------------------------------------
-🔍 Checking AWS EKS Insights...
+## 🔍 Checking AWS EKS Insights...
 -----------------------------------------------------------------------------------------
 Insight Name                                  Status          Description                                       
 -----------------------------------------------------------------------------------------
