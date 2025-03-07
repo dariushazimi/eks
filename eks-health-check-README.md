@@ -24,10 +24,10 @@ brew install awscli jq          # For macOS
 
 ```
 
-`
+```
 ./eks_health_check.sh <eks-cluster-name>
+```
 
-`
 ========================================
 🔍 **EKS Cluster Health Check**
 ========================================
