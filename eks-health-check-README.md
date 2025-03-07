@@ -25,16 +25,14 @@ brew install awscli jq          # For macOS
 ./eks_health_check.sh <eks-cluster-name>
 ```
 
-========================================
 ## 🔍 EKS Cluster Health Check
-========================================
 ✅ AWS Account ID   : 7000000000
-🔍 Checking EKS Cluster Details...
+## 🔍 Checking EKS Cluster Details...
 ✅ Cluster Name      : demo-cluster
 ✅ Kubernetes Version: 1.30
 ✅ Cluster Status    : ACTIVE
-✅ Public Access     : ⚠️ Enabled (Security Risk)
-🔍 Checking IAM Role Permissions...
+✅ Public Access     : ⚠️  Enabled (Security Risk)
+## 🔍 Checking IAM Role Permissions...
 ✅ EKS IAM Role: arn:aws:iam::3333333330:role/DemoClusterRole
 
 ## 🔍 Checking AWS Security Groups...
